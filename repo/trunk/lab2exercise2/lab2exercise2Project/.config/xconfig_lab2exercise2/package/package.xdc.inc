@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_lab2exercise2.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-B06
+package/xconfig_lab2exercise2.java
+package/xconfig_lab2exercise2.class
+package/package_xconfig_lab2exercise2.c
+package/package.defs.h
+package/xconfig_lab2exercise2.ccs

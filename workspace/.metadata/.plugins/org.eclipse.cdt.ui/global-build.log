@@ -1,0 +1,793 @@
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/lab2switchchecker.cfg"
+Invoking: XDCtools
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/xs" --xdcpath="C:/CCStudio_v8/tirtos_c2000_2_16_01_14/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/tidrivers_c2000_2_16_01_13/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/ndk_2_25_00_09/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/uia_2_00_05_50/packages;C:/CCStudio_v8/bios_6_70_01_03/packages;" xdc.tools.configuro -o configPkg -t ti.targets.C28_float -p ti.platforms.tms320x28:TMS320F28377S -r debug -c "C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/lab2switchchecker.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring lab2switchchecker.x28FP from package/cfg/lab2switchchecker_p28FP.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/ayush2_nigam4/repo/trunk/lab2switchchecker/src/sysbios/sysbios.a28FP ...
+gmake[1]: Entering directory `C:/ayush2_nigam4/repo/trunk/lab2switchchecker/src/sysbios'
+cl28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/BIOS.c ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_disp_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/IntrinsicsSupport_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/TaskSupport_asm.s28 ...
+ar28FP BIOS.obj c28_Hwi_asm.obj c28_Hwi_disp_asm.obj c28_IntrinsicsSupport_asm.obj c28_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/ayush2_nigam4/repo/trunk/lab2switchchecker/src/sysbios'
+Build of libraries done.
+cl28FP package/cfg/lab2switchchecker_p28FP.c ...
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/lab2switchchecker.cfg"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Adc.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Adc.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Adc.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Adc.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_CodeStartBranch.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_EPwm.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_EPwm.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_GlobalVariableDefs.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Gpio.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Gpio.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Spi.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Spi.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Spi.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_Spi.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_SysCtrl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_usDelay.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sADC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sADC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sADC.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sADC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sCoecsl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sCoecsl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sCoecsl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sCoecsl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sDAC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sDAC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sDAC.c"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sDAC.c", line 36 (col. 75): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sDAC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEPWM3A.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEPWM3A.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEPWM3A.c"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEPWM3A.c", line 47 (col. 28): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEPWM3A.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEqep.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEqep.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEqep.c"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEqep.c", line 33 (col. 19): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sEqep.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sSerial.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sSerial.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sSerial.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/f28377sSerial.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/lcd.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="lcd.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/lcd.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sSrc/lcd.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+>> Compilation failure
+subdir_rules.mk:128: recipe for target 'user_lab2switchchecker.obj' failed
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 220: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 220: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 220: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 221: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 221: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 221: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 222: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 222: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 222: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 226: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 226: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 226: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 227: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 227: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 227: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 228: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 228: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 228: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 232: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 232: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 232: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 233: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 233: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 233: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 234: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 234: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 234: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 238: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 238: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 238: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 239: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 239: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 239: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 240: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 240: error #196: expected an asm string
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 240: error #7: unrecognized token
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 253: warning #994-D: missing return statement at end of non-void function "ReadSwitches"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 245: warning #179-D: variable "val" was declared but never referenced
+36 errors detected in the compilation of "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c".
+gmake: *** [user_lab2switchchecker.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+>> Compilation failure
+subdir_rules.mk:128: recipe for target 'user_lab2switchchecker.obj' failed
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 251: error #137: struct "GPCDAT_BITS" has no field "GPIO692"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 264: error #137: struct "GPDDAT_BITS" has no field "GPIO699"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 280: warning #994-D: missing return statement at end of non-void function "ReadSwitches"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 272: warning #179-D: variable "val" was declared but never referenced
+2 errors detected in the compilation of "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c".
+gmake: *** [user_lab2switchchecker.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 280: warning #994-D: missing return statement at end of non-void function "ReadSwitches"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 272: warning #179-D: variable "val" was declared but never referenced
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 101: warning #225-D: function "ReadSwitches" declared implicitly
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 103: warning #225-D: function "SetLEDsOnOff" declared implicitly
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+ 
+ undefined     first referenced            
+  symbol           in file                 
+ ---------     ----------------            
+ _SetLEDsOnOff ./user_lab2switchchecker.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2switchchecker.out" not built
+ 
+>> Compilation failure
+makefile:157: recipe for target 'lab2switchchecker.out' failed
+gmake: *** [lab2switchchecker.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+ 
+ undefined     first referenced            
+  symbol           in file                 
+ ---------     ----------------            
+ _SetLEDsOnOff ./user_lab2switchchecker.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2switchchecker.out" not built
+ 
+>> Compilation failure
+makefile:157: recipe for target 'lab2switchchecker.out' failed
+gmake: *** [lab2switchchecker.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+>> Compilation failure
+subdir_rules.mk:128: recipe for target 'user_lab2switchchecker.obj' failed
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 28: error #131: expected a "{"
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 40: warning #837-D: pragma can only be applied to a file level symbol, not 'matlabLock'
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 57: warning #179-D: variable "f" was declared but never referenced
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 58: warning #179-D: variable "i" was declared but never referenced
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 59: warning #179-D: variable "c" was declared but never referenced
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 60: warning #78-D: this declaration has no storage class or type specifier
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 105: warning #225-D: function "SetLEDsOnOff" declared implicitly
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 223: error #249: function "SetLEDsONOff" has already been defined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 332: error #20: identifier "UARTbeginnewdata" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 335: error #20: identifier "UARTdatacollect" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 341: error #20: identifier "UARTdatacollect" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 342: error #20: identifier "UARTreceivelength" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 344: error #20: identifier "UARTreceivelength" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 345: error #20: identifier "UARTMessageArray" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 377: error #20: identifier "UARTMessageArray" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 384: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 385: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 386: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 387: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 388: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 400: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 401: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 402: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 403: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 405: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 410: error #20: identifier "matlabLockshadow" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 410: error #20: identifier "matlabLock" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 415: error #20: identifier "Main_sendingarray" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 416: error #20: identifier "matlabLock" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 417: error #20: identifier "matlabLockshadow" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 418: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 419: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 420: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 421: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 434: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 435: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 436: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 437: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 438: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 439: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 440: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 441: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 442: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 443: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 466: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 467: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 468: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 469: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 471: error #156: expression must have struct or union type
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 475: error #20: identifier "matlabLockshadow" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 475: error #20: identifier "matlabLock" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 510: error #20: identifier "adcb0result" is undefined
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 511: error #20: identifier "adcb1result" is undefined
+47 errors detected in the compilation of "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c".
+gmake: *** [user_lab2switchchecker.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c", line 105: warning #225-D: function "SetLEDsOnOff" declared implicitly
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+ 
+ undefined     first referenced            
+  symbol           in file                 
+ ---------     ----------------            
+ _SetLEDsOnOff ./user_lab2switchchecker.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2switchchecker.out" not built
+ 
+>> Compilation failure
+makefile:157: recipe for target 'lab2switchchecker.out' failed
+gmake: *** [lab2switchchecker.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2switchchecker ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2switchchecker.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2switchchecker/user_lab2switchchecker.c"
+ 
+Building target: "lab2switchchecker.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2switchchecker.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2switchchecker_linkInfo.xml" --rom_model -o "lab2switchchecker.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2switchchecker.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2switchchecker/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2switchchecker.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2exercise2 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/lab2exercise2.cfg"
+Invoking: XDCtools
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/xs" --xdcpath="C:/CCStudio_v8/tirtos_c2000_2_16_01_14/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/tidrivers_c2000_2_16_01_13/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/ndk_2_25_00_09/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/uia_2_00_05_50/packages;C:/CCStudio_v8/bios_6_70_01_03/packages;" xdc.tools.configuro -o configPkg -t ti.targets.C28_float -p ti.platforms.tms320x28:TMS320F28377S -r debug -c "C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/lab2exercise2.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring lab2exercise2.x28FP from package/cfg/lab2exercise2_p28FP.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/ayush2_nigam4/repo/trunk/lab2exercise2/src/sysbios/sysbios.a28FP ...
+gmake[1]: Entering directory `C:/ayush2_nigam4/repo/trunk/lab2exercise2/src/sysbios'
+cl28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/BIOS.c ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_disp_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/IntrinsicsSupport_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/TaskSupport_asm.s28 ...
+ar28FP BIOS.obj c28_Hwi_asm.obj c28_Hwi_disp_asm.obj c28_IntrinsicsSupport_asm.obj c28_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/ayush2_nigam4/repo/trunk/lab2exercise2/src/sysbios'
+Build of libraries done.
+cl28FP package/cfg/lab2exercise2_p28FP.c ...
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/lab2exercise2.cfg"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Adc.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Adc.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Adc.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Adc.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_CodeStartBranch.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_EPwm.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_EPwm.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_GlobalVariableDefs.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Gpio.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Gpio.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Spi.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Spi.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Spi.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_Spi.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_SysCtrl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_usDelay.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sADC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sADC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sADC.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sADC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sCoecsl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sCoecsl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sCoecsl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sCoecsl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sDAC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sDAC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sDAC.c"
+"C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sDAC.c", line 36 (col. 75): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sDAC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEPWM3A.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEPWM3A.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEPWM3A.c"
+"C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEPWM3A.c", line 47 (col. 28): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEPWM3A.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEqep.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEqep.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEqep.c"
+"C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEqep.c", line 33 (col. 19): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sEqep.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sSerial.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sSerial.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sSerial.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/f28377sSerial.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/lcd.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="lcd.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/lcd.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sSrc/lcd.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2exercise2.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+ 
+Building target: "lab2exercise2.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2exercise2.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2exercise2_linkInfo.xml" --rom_model -o "lab2exercise2.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2exercise2.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2exercise2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2exercise2 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2exercise2.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:128: recipe for target 'user_lab2exercise2.obj' failed
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c", line 106: error #18: expected a ")"
+1 error detected in the compilation of "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c".
+gmake: *** [user_lab2exercise2.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2exercise2 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2exercise2.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+ 
+Building target: "lab2exercise2.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2exercise2.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2exercise2_linkInfo.xml" --rom_model -o "lab2exercise2.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2exercise2.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2exercise2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2exercise2 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2exercise2 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2exercise2.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2exercise2/user_lab2exercise2.c"
+ 
+Building target: "lab2exercise2.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2exercise2.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2exercise2_linkInfo.xml" --rom_model -o "lab2exercise2.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2exercise2.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2exercise2/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2exercise2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2morsecode ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/lab2morsecode.cfg"
+Invoking: XDCtools
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/xs" --xdcpath="C:/CCStudio_v8/tirtos_c2000_2_16_01_14/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/tidrivers_c2000_2_16_01_13/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/ndk_2_25_00_09/packages;C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/uia_2_00_05_50/packages;C:/CCStudio_v8/bios_6_70_01_03/packages;" xdc.tools.configuro -o configPkg -t ti.targets.C28_float -p ti.platforms.tms320x28:TMS320F28377S -r debug -c "C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/lab2morsecode.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring lab2morsecode.x28FP from package/cfg/lab2morsecode_p28FP.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/ayush2_nigam4/repo/trunk/lab2morsecode/src/sysbios/sysbios.a28FP ...
+gmake[1]: Entering directory `C:/ayush2_nigam4/repo/trunk/lab2morsecode/src/sysbios'
+cl28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/BIOS.c ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/Hwi_disp_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/IntrinsicsSupport_asm.s28 ...
+asm28FP C:/CCStudio_v8/tirtos_c2000_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/c28/TaskSupport_asm.s28 ...
+ar28FP BIOS.obj c28_Hwi_asm.obj c28_Hwi_disp_asm.obj c28_IntrinsicsSupport_asm.obj c28_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/ayush2_nigam4/repo/trunk/lab2morsecode/src/sysbios'
+Build of libraries done.
+cl28FP package/cfg/lab2morsecode_p28FP.c ...
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/lab2morsecode.cfg"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Adc.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Adc.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Adc.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Adc.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_CodeStartBranch.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_EPwm.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_EPwm.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_EPwm.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_GlobalVariableDefs.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Gpio.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Gpio.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Gpio.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Spi.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Spi.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Spi.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_Spi.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_SysCtrl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_SysCtrl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_usDelay.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/source/F2837xS_usDelay.asm"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sADC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sADC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sADC.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sADC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sCoecsl.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sCoecsl.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sCoecsl.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sCoecsl.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sDAC.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sDAC.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sDAC.c"
+"C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sDAC.c", line 36 (col. 75): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sDAC.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEPWM3A.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEPWM3A.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEPWM3A.c"
+"C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEPWM3A.c", line 47 (col. 28): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEPWM3A.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEqep.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEqep.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEqep.c"
+"C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEqep.c", line 33 (col. 19): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sEqep.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sSerial.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sSerial.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sSerial.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/f28377sSerial.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/lcd.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="lcd.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/lcd.c"
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sSrc/lcd.c"
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2morsecode.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+ 
+Building target: "lab2morsecode.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2morsecode.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2morsecode_linkInfo.xml" --rom_model -o "lab2morsecode.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2morsecode.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2morsecode.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2morsecode ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ lab2morsecode.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+Finished building: "C:/ayush2_nigam4/repo/trunk/lab2morsecode/user_lab2morsecode.c"
+ 
+Building target: "lab2morsecode.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"lab2morsecode.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="lab2morsecode_linkInfo.xml" --rom_model -o "lab2morsecode.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_lab2morsecode.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/lab2morsecode/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "lab2morsecode.out"
+ 
+
+**** Build Finished ****

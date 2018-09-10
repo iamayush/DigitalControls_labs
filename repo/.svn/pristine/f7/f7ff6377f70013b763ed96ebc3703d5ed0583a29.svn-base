@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_Cheapli_SE420.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-B06
+package/xconfig_Cheapli_SE420.java
+package/xconfig_Cheapli_SE420.class
+package/package_xconfig_Cheapli_SE420.c
+package/package.defs.h
+package/xconfig_Cheapli_SE420.ccs

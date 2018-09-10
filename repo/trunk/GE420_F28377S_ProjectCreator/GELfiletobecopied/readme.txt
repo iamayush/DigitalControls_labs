@@ -1,0 +1,1 @@
+copy this file to CCStudiodirectory\ccsv6\ccs_base\emulation\gel\

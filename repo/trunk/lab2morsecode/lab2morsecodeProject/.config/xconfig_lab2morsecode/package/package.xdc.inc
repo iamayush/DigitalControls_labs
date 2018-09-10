@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_lab2morsecode.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-B06
+package/xconfig_lab2morsecode.java
+package/xconfig_lab2morsecode.class
+package/package_xconfig_lab2morsecode.c
+package/package.defs.h
+package/xconfig_lab2morsecode.ccs
