@@ -3821,3 +3821,36 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.core.resources 2 10035 2018-10-22 17:49:35.786
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2018-10-29 15:03:38.593 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-29 15:03:49.148
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.ti.common.core 4 0 2018-10-29 15:03:49.238
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-10-29 15:03:49.248
+!MESSAGE debugServerDir=C:/CCStudio_v8/ccsv8/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2018-10-29 15:03:58.207
+!MESSAGE Unexpected CCS exit detected [10/26/18 11:39 AM]!!!
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-10-29 15:26:28.184
+!MESSAGE DS_ERROR: IcePick_C_0: Power Failure on Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-10-29 15:26:28.184
+!MESSAGE DS_ERROR: C28xx_CPU1: Breakpoint Manager: Unable to remove requested AET job
+
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-10-29 15:27:02.084
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-10-29 15:27:02.094
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

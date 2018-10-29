@@ -90,8 +90,12 @@ int SIMU_datacollect = 0;
 int SIMU_Tranaction_Type = 0;
 int SIMU_checkfirstcommandbyte = 0;
 
-float Kp = 8;
+float Kp = 10; //8;
 float Kd = 0.8;
+float Ki = 100;
+float thresh = 1;
+float Ki_val = 500;
+float Kd_val = 0.8;
 
 float vel_old = 0;
 float vel = 0;
@@ -100,7 +104,12 @@ float posn_old = 0;
 float u = 0;
 float amp=1;
 float error =0;
+float error_old = 0;
 float reference = 0;
+float integral = 0;
+float integral_old;
+float errordot = 0;
+float errordot_old = 0;
 
 int timer = 0;
 
@@ -113,14 +122,31 @@ void mainclock(void){
     vel = 0.6*vel_old + 400*(posn - posn_old);
     ref();
     //reference = amp;
+
     error = reference - posn;
-    u = Kp*error - Kd*vel;
+    errordot = 0.6*errordot_old + 400*(error - error_old);
+
+
+    if(fabs(errordot) > thresh){
+        Ki = 0;
+        Kd = Kd_val;
+        integral = 0;
+    }
+    else{
+        Ki = Ki_val;
+        Kd = 0;
+        integral = integral_old + 0.001*(error + error_old)/2.0;
+    }
+
+    u = Kp*error - Kd*vel + Ki*integral;
     //saturation
     if((u < -10)){
         u = -10;
+        integral = integral_old;
     }
     if((u > 10)){
         u = 10;
+        integral = integral_old;
     }
 
     setEPWM3A(u);
@@ -133,6 +159,9 @@ void mainclock(void){
 
     vel_old=vel;
     posn_old = posn;
+    error_old = error;
+    integral_old = integral;
+    errordot_old = errordot;
 }
 
 void ref(void){

@@ -6,9 +6,9 @@
  *
  * Code generation for model "simulink_plotAndGains".
  *
- * Model version              : 1.108
+ * Model version              : 1.110
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Mon Oct 22 17:36:27 2018
+ * C source code generated on : Mon Oct 29 16:58:01 2018
  *
  * Target selection: sldrt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -411,14 +411,14 @@ RT_MODEL_simulink_plotAndGains_T *simulink_plotAndGains(void)
     simulink_plotAndGains_M->Timing.sampleHits = (&mdlSampleHits[0]);
   }
 
-  rtmSetTFinal(simulink_plotAndGains_M, 500.0);
+  rtmSetTFinal(simulink_plotAndGains_M, 10.0);
   simulink_plotAndGains_M->Timing.stepSize0 = 0.005;
 
   /* External mode info */
-  simulink_plotAndGains_M->Sizes.checksums[0] = (599694896U);
-  simulink_plotAndGains_M->Sizes.checksums[1] = (1304576830U);
-  simulink_plotAndGains_M->Sizes.checksums[2] = (1185238290U);
-  simulink_plotAndGains_M->Sizes.checksums[3] = (197174278U);
+  simulink_plotAndGains_M->Sizes.checksums[0] = (1116753401U);
+  simulink_plotAndGains_M->Sizes.checksums[1] = (1397365430U);
+  simulink_plotAndGains_M->Sizes.checksums[2] = (375019130U);
+  simulink_plotAndGains_M->Sizes.checksums[3] = (2949141154U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
