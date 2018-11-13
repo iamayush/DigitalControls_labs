@@ -28,6 +28,9 @@ extern const ti_sysbios_family_c28_Hwi_Handle hwi98_scibRx;
 #include <ti/sysbios/knl/Clock.h>
 extern const ti_sysbios_knl_Clock_Handle myclock;
 
+#include <ti/sysbios/family/c28/Hwi.h>
+extern const ti_sysbios_family_c28_Hwi_Handle ADChwi;
+
 extern int xdc_runtime_Startup__EXECFXN__C;
 
 extern int xdc_runtime_Startup__RESETFXN__C;
