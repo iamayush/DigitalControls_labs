@@ -94,8 +94,8 @@ int SIMU_checkfirstcommandbyte = 0;
 
 //variables
 long timer = 0;
-long double amp1=2.5;
-long double amp2=0.75;
+long double amp1=2;
+long double amp2=1;
 long double reference = 0;
 long double u =0;
 long double ADCvoltsb2 =0;
@@ -542,8 +542,8 @@ void simulink_serialRX(serial_t *s, char data) {
                 // but that is for Simulink control
                 // For Simulink data collection just send most current ADC and ENCs
                 // Simulink Sample rate needs to be at least 500HZ but 200Hz probably better
-                SIMU_Var1_toSIMU_32bit = EQEP_readraw(&eqep1);
-                SIMU_Var2_toSIMU_32bit = EQEP_readraw(&eqep3);
+                SIMU_Var1_toSIMU_32bit = 10000*posn;
+                SIMU_Var2_toSIMU_32bit = 10000*fr[6];
 
                 SIMU_Var1_toSIMU_16bit = adcb0result;
                 SIMU_Var2_toSIMU_16bit = adcb1result;
