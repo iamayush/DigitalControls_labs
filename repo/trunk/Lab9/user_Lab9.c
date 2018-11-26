@@ -92,70 +92,50 @@ int SIMU_datacollect = 0;
 int SIMU_Tranaction_Type = 0;
 int SIMU_checkfirstcommandbyte = 0;
 
-//variables
-long timer = 0;
-long double amp1=2;
-long double amp2=1;
-long double reference = 0;
-long double u =0;
-long double ADCvoltsb2 =0;
-long double Kp = 5.2924; //8;
-long double Kd = 0.1572;
-long double Ki = 93.9734;
+//Variables
+long timer = 0; // keeps track of time in ms
+//reference signal generation
+long double amp1=2; // reference high level in volts
+long double amp2=1; // reference low level in volts
+long double reference = 0; // stores reference value for each ms
+
+// controls vars
+long double u =0; // control effort
+long double ADCvoltsb2 = 0; // Hall Effect sensors output in volts
 long double vel_old = 0;
-long double vel = 0;
-long double posn = 0;
+long double vel = 0; // derivative of sensor output
+long double posn = 0; // sensor output
 long double posn_old = 0;
-long double error =0;
+long double error = 0; // error between desired posn and actual posn
 long double error_old = 0;
 long double integral = 0;
 long double integral_old=0;
 
-//long double numfil[4]= {   9.7059014792764445e-07,
-//                            2.9117704437829331e-06,
-//                            2.9117704437829331e-06,
-//                            9.7059014792764445e-07};/*{    9.4204523525420674e-13,
-//                           5.6522714115252405e-12,
-//                           1.4130678528813101e-11,
-//                           1.8840904705084135e-11,
-//                           1.4130678528813101e-11,
-//                           5.6522714115252405e-12,
-//                           9.4204523525420674e-13};*/
-//long double denfil[4]= {    1.0000000000000000e+00,
-//                            -2.9405940594059405e+00,
-//                            2.8823644740711698e+00,
-//                            -9.4176264994404557e-01};/*{ 1.0000000000000000e+00,
-//                        -5.8811881188118820e+00,
-//                        1.4411822370355853e+01,
-//                        -1.8835252998880922e+01,
-//                        1.3846708268979292e+01,
-//                        -5.4290064104116844e+00,
-//                        8.8691688882963160e-01};*/
+// PID Gains found thru MATLAB
+long double Kp = 5.2924;
+long double Kd = 0.1572;
+long double Ki = 93.9734;
 
-long double numfil[7]= /*{   9.7059014792764445e-07,
-                            2.9117704437829331e-06,
-                            2.9117704437829331e-06,
-                            9.7059014792764445e-07};*/{    9.4204523525420674e-13L,
-                           5.6522714115252405e-12L,
-                           1.4130678528813101e-11L,
-                           1.8840904705084135e-11L,
-                           1.4130678528813101e-11L,
-                           5.6522714115252405e-12L,
-                           9.4204523525420674e-13L};
-long double denfil[7]= /*{    1.0000000000000000e+00,
-                            -2.9405940594059405e+00,
-                            2.8823644740711698e+00,
-                            -9.4176264994404557e-01};*/{ 1.0000000000000000e+00L,
-                        -5.8811881188118820e+00L,
-                        1.4411822370355853e+01L,
-                        -1.8835252998880922e+01L,
-                        1.3846708268979292e+01L,
-                        -5.4290064104116844e+00L,
-                        8.8691688882963160e-01L};
+// Filter for slower trajectory
+long double numfil[7]= {    9.4204523525420674e-13L,
+                            5.6522714115252405e-12L,
+                            1.4130678528813101e-11L,
+                            1.8840904705084135e-11L,
+                            1.4130678528813101e-11L,
+                            5.6522714115252405e-12L,
+                            9.4204523525420674e-13L};
+long double denfil[7]= { 1.0000000000000000e+00L,
+                         -5.8811881188118820e+00L,
+                         1.4411822370355853e+01L,
+                         -1.8835252998880922e+01L,
+                         1.3846708268979292e+01L,
+                         -5.4290064104116844e+00L,
+                         8.8691688882963160e-01L};
 
-long double r[7] = {0,0,0,0,0,0,0};
-long double fr[7] = {0,0,0,0,0,0,0};
+long double r[7] = {0,0,0,0,0,0,0}; // stores reference values (square wave)
+long double fr[7] = {0,0,0,0,0,0,0}; // stores filtered slower traj
 
+// Generates Square wave
 void ref(void){
     if(timer < 5000){
         reference = amp1;
@@ -169,15 +149,12 @@ void ref(void){
     }
 }
 
+// Generates slower traj
 void myfilter(void)
 {
-        r[6] = reference;
-        fr[6]=-denfil[1]*fr[5]-denfil[2]*fr[4]-denfil[3]*fr[3]-denfil[4]*fr[2]-denfil[5]*fr[1]-denfil[6]*fr[0];
-        fr[6]+=numfil[0]*r[6]+numfil[1]*r[5]+numfil[2]*r[4]+numfil[3]*r[3]+numfil[4]*r[2]+numfil[5]*r[1]+numfil[6]*r[0];
-
-//    r[3] = reference;
-//    fr[3]=-denfil[1]*fr[2]-denfil[2]*fr[1]-denfil[3]*fr[0];
-//    fr[3]+=numfil[0]*r[3]+numfil[1]*r[2]+numfil[2]*r[1]+numfil[3]*r[0];
+    r[6] = reference;
+    fr[6]=-denfil[1]*fr[5]-denfil[2]*fr[4]-denfil[3]*fr[3]-denfil[4]*fr[2]-denfil[5]*fr[1]-denfil[6]*fr[0];
+    fr[6]+=numfil[0]*r[6]+numfil[1]*r[5]+numfil[2]*r[4]+numfil[3]*r[3]+numfil[4]*r[2]+numfil[5]*r[1]+numfil[6]*r[0];
 
     int i;
     for(i =0; i<6; i++){
@@ -186,6 +163,7 @@ void myfilter(void)
     }
 }
 
+// Runs every 1 ms
 void myclockfunc(void)
 {
     AdcbRegs.ADCSOCPRICTL.bit.RRPOINTER = 0x10;
@@ -199,16 +177,17 @@ void ADChwifunc(void)
     myfilter();
 
     ADCB2result = AdcbResultRegs.ADCRESULT2;
-    ADCvoltsb2 = 3.0*ADCB2result/4095.0;
+    ADCvoltsb2 = 3.0*ADCB2result/4095.0; // sensor output in volts
     posn = ADCvoltsb2;
-    vel = 0.6*vel_old + 400*(posn - posn_old);
+    vel = 0.6*vel_old + 400*(posn - posn_old); // derivative computed using approximation s = 500s/(s+500)
     error = fr[6] - posn;
+    // error = reference - posn; // for square wave
 
 
     integral = integral_old + 0.001*(error + error_old)/2.0;
-    u = Kp*error - Kd*vel + Ki*integral;
+    u = Kp*error - Kd*vel + Ki*integral; // control law
 
-    //saturation
+    //saturation and anti-windup
     if((u < -10)){
         u = -10;
         integral = integral_old;
@@ -218,14 +197,15 @@ void ADChwifunc(void)
         integral = integral_old;
     }
 
-    setEPWM8A(u);
+    setEPWM8A(u); // sending control effort to PWM channel
 
+    // storing old vals
     vel_old=vel;
     posn_old = posn;
     error_old = error;
     integral_old = integral;
 
-    AdcbRegs.ADCINTFLGCLR.bit.ADCINT1 = 1;
+    AdcbRegs.ADCINTFLGCLR.bit.ADCINT1 = 1; // clearing adc flag
 }
 
 void main(void)
@@ -543,7 +523,8 @@ void simulink_serialRX(serial_t *s, char data) {
                 // For Simulink data collection just send most current ADC and ENCs
                 // Simulink Sample rate needs to be at least 500HZ but 200Hz probably better
                 SIMU_Var1_toSIMU_32bit = 10000*posn;
-                SIMU_Var2_toSIMU_32bit = 10000*fr[6];
+                SIMU_Var2_toSIMU_32bit = 10000*reference;
+                //SIMU_Var2_toSIMU_32bit = 10000*fr[6];
 
                 SIMU_Var1_toSIMU_16bit = adcb0result;
                 SIMU_Var2_toSIMU_16bit = adcb1result;

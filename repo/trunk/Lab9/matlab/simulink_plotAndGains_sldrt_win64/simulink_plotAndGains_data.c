@@ -6,9 +6,9 @@
  *
  * Code generation for model "simulink_plotAndGains".
  *
- * Model version              : 1.111
+ * Model version              : 1.112
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Fri Nov 16 16:41:48 2018
+ * C source code generated on : Mon Nov 26 08:44:05 2018
  *
  * Target selection: sldrt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
