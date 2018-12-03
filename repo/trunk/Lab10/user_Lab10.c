@@ -93,6 +93,7 @@ int SIMU_checkfirstcommandbyte = 0;
 // vars
 float u = 0;
 float x1 = 0;
+float x1mod = 0;
 float x2 = 0;
 float x3 = 0;
 float x3mod = 0;
@@ -104,7 +105,7 @@ float x3_old = 0;
 float x4_old = 0;
 float ang1 = 0; // motor 1 angle
 
-float setpoint = -1.57;
+float setpoint = 0;
 
 long timer = 0;
 
@@ -117,43 +118,27 @@ float Vneg = 0.008; //0.01246;
 float Cpos = 0.8; //0.6185;
 float Cneg = -0.8; //-0.6447;
 
-// ramp function for setpoint
-//void ramp(void){
-//    if(timer < 400){
-//        setpoint += 0.01;
-//    }
-//    else if (timer < 800){
-//        setpoint += -0.01;
-//    }
-//    else{
-//        setpoint = -1.57;
-//        timer = 0;
-//    }
-//}
+char swingup = 1;
+char catchit = 0;
+float E_des = 0.3976*9.81;
+float E_act = 0;
+float reality_check = 1.5;
+float K_swing = 1;
+float Kvel = 2;
 
-void square(void){
-    if(timer < 400){
-        setpoint = -1.57;
-    }
-    else if (timer < 800){
-        setpoint = 1.57;
-    }
-    else{
-        setpoint = -1.57;
-        timer = 0;
-    }
-}
+
 
 void mainclkfunc(void){
     timer++; // timekeeping
-    //ramp();
-    square();
+
 
     ang1 = readEnc1();
     x1 = ang1 - setpoint;
     x2 = 0.6*x2_old + 80.0*(x1 - x1_old);
     x3 = readEnc2();
     x4 = 0.6*x4_old + 80.0*(x3 - x3_old);
+
+
 
     if (x3 > PI) {
         x3mod = x3 - 2.0*PI*floor((x3+PI)/(2*PI));
@@ -163,7 +148,15 @@ void mainclkfunc(void){
         x3mod = x3;
     }
 
-    u = -K[0]*x1 -K[1]*x2 -K[2]*x3mod -K[3]*x4;
+    if (x1 > PI) {
+        x1mod = x1 - 2.0*PI*floor((x1+PI)/(2*PI));
+    } else if (x1 < -PI) {
+        x1mod = x1 - 2.0*PI*ceil((x1-PI)/(2*PI));
+    } else {
+        x1mod = x1;
+    }
+
+    u = -K[0]*x1mod -K[1]*x2 -K[2]*x3mod -K[3]*x4;
 
     if (x2 > 0.0) {
         u = u + 0.95*Vpos*x2 + 0.95*Cpos;
@@ -172,22 +165,41 @@ void mainclkfunc(void){
         u = u + 0.95*Vneg*x2 + 0.95*Cneg;
     }
 
-    if(u > 10){
-        if(u > 30) // safety for too high u
-            u = 0;
-        else
-            u = 10;
-    }
-    else if (u < -10){
-        if(u < -30)
-            u = 0;
-        else
-            u = -10;
+    E_act = 0.5*0.0697* x4*x4 + 0.3976*9.81*cos(x3mod);
+
+    if(!catchit){
+        if(fabs(x3mod) < 0.30){
+            if (fabs(u) < 50.0){
+                swingup = 0;
+                catchit = 1;
+            }
+        }
     }
 
-    // safety for avoiding huge angular deviation
-    if(fabs(x3mod) > 0.6)
-        u = 0;
+    if(swingup){
+        if(x4*cos(x3mod) > 0){
+            u = -K_swing*(reality_check*E_des - E_act);
+        }
+        else{
+            u = K_swing*(reality_check*E_des - E_act);
+        }
+
+        if(u > 0.0)
+            u = u - Kvel*fabs(x4);
+        else
+            u = u + Kvel*fabs(x4);
+
+
+        setpoint = ang1;
+    }
+    else{
+        if(fabs(u) > 60.0){
+            u = 0;
+            swingup = 1;
+            catchit = 0;
+        }
+    }
+
 
     setEPWM3A(u); // sending control effort
 

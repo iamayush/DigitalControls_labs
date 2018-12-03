@@ -4248,3 +4248,189 @@ Finished building target: "Lab10.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab9 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab9/user_Lab9.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab9/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab9.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab9/user_Lab9.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab9/user_Lab9.c", line 180 (col. 33): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab9/user_Lab9.c"
+ 
+Building target: "Lab9.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab9.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab9_linkInfo.xml" --rom_model -o "Lab9.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab9.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab9/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab9.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+>> Compilation failure
+subdir_rules.mk:128: recipe for target 'user_Lab10.obj' failed
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 180: error #20: identifier "K_swing" is undefined
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 183: error #20: identifier "K_swing" is undefined
+2 errors detected in the compilation of "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c".
+gmake: *** [user_Lab10.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 143 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 167 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 143 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 167 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 143 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 167 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 143 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 167 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 144 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 168 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab10 ****
+
+"C:\\CCStudio_v8\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+Invoking: C2000 Compiler
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/F28377sHeaders/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/include/" --include_path="C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_ Lab10.d_raw" --cmd_file="configPkg/compiler.opt" "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 254: warning #303-D: typedef name has already been declared (with same type)
+"C:/CCStudio_v8/xdctools_3_32_00_06_core/packages/xdc/std.h", line 255: warning #303-D: typedef name has already been declared (with same type)
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 144 (col. 42): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+"C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c", line 168 (col. 48): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for cos.
+Finished building: "C:/ayush2_nigam4/repo/trunk/Lab10/user_Lab10.c"
+ 
+Building target: "Lab10.out"
+Invoking: C2000 Linker
+"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Lab10.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/" -i"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab10_linkInfo.xml" --rom_model -o "Lab10.out" "./F2837xS_Adc.obj" "./F2837xS_CodeStartBranch.obj" "./F2837xS_EPwm.obj" "./F2837xS_GlobalVariableDefs.obj" "./F2837xS_Gpio.obj" "./F2837xS_Spi.obj" "./F2837xS_SysCtrl.obj" "./F2837xS_usDelay.obj" "./f28377sADC.obj" "./f28377sCoecsl.obj" "./f28377sDAC.obj" "./f28377sEPWM3A.obj" "./f28377sEqep.obj" "./f28377sSerial.obj" "./lcd.obj" "./user_Lab10.obj" -l"configPkg/linker.cmd" -llibc.a -l"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib/rts2800_fpu32.lib" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_common/cmd/2837x_Dan_FLASH_lnk_cpu1.cmd" -l"C:/ayush2_nigam4/repo/trunk/Lab10/v140/F2837xS_headers/cmd/F2837xS_Headers_BIOS.cmd" 
+<Linking>
+Finished building target: "Lab10.out"
+ 
+
+**** Build Finished ****
