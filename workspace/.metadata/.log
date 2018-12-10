@@ -7711,3 +7711,38 @@ Error 0x20001020/-1135
 Severe Error during: Execution, Target, 
 Unrecoverable emulation error
 
+!SESSION 2018-12-10 15:51:15.208 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2018-12-10 15:51:24.568
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-12-10 15:51:24.575
+!MESSAGE debugServerDir=C:/CCStudio_v8/ccsv8/ccs_base/DebugServer
+!SESSION 2018-12-10 16:01:37.778 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2018-12-10 16:01:41.206
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-12-10 16:01:41.216
+!MESSAGE debugServerDir=C:/CCStudio_v8/ccsv8/ccs_base/DebugServer
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-10 16:02:01.089
+!MESSAGE Indexed 'Lab11' (14 sources, 155 headers) in 2.04 sec: 19,178 declarations; 22,446 references; 0 unresolved inclusions; 149 syntax errors; 231 unresolved names (0.55%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-10 16:29:46.516
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-10 16:29:46.526
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
